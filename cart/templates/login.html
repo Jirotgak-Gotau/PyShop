@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- Include your CSS styles here to match the app's design -->
+</head>
+
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="/login" method="post">
+      <!-- Email/Username Field -->
+      <label for="email">Email/Username:</label>
+      <input type="text" id="email" name="email" required>
+
+      <!-- Password Field -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <!-- Remember Me Checkbox -->
+      <label for="remember">Remember Me:</label>
+      <input type="checkbox" id="remember" name="remember">
+
+      <!-- Forgot Password Link -->
+      <a href="/forgot-password">Forgot Password?</a>
+
+      <!-- Submit Button -->
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+
+</html>
