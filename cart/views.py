@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
+from django.contrib.auth import login, authenticate
 
 
 # Create your views here.
@@ -84,3 +85,15 @@ def register(request):
 @login_required
 def profile(request):
     # Your profile view logic here
+
+
+def register(request):
+    if request.method == 'POST':
+        # Registration logic
+        # ...
+        if user is not None:
+            login(request, user)
+            return redirect('dashboard')  # Redirect to the dashboard view
+    # ...
+    
+    

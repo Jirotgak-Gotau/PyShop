@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'products.apps.ProductsConfig'
+    'products.apps.ProductsConfig',
+    'cart.apps.CartConfig',
+    'authapp.apps.AuthappConfig',
+    'authapp.Customuser'
 ]
 
 MIDDLEWARE = [
@@ -130,4 +133,7 @@ SESSION_ENGINE = "django.contrib.sessions.backends.db"
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
 )
+
+AUTH_USER_MODEL = 'authapp.CustomUser'  # Replace 'yourapp' with the actual name of your app
+
 

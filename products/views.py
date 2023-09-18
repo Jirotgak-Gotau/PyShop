@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import Product
+from .product import Product
 
 
 def index(request):

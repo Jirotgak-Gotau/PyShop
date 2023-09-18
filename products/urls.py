@@ -4,6 +4,5 @@ from . import views
 urlpatterns = [
   path('', views.index),
   path('new', views.new)
-  path('add/<int:product_id>/', views.add_to_cart, name='add_to_cart'),
 ]  
 
